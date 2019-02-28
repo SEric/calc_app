@@ -1,0 +1,29 @@
+<Button>:
+    on_press:app.button_pressed(self)
+    background_color:(0,1,1,1)
+BoxLayout:
+    orientation:"vertical"
+    Label:
+        id:Feld
+        text:"Hallo"
+    BoxLayout:
+        orientation:"horizontal"
+        Button:
+            text:"1"
+        Button:
+            text:"2"
+    BoxLayout:
+        orientation:"horizontal"
+        Button:
+            text:"3"
+        Button:
+            text:"4"
+    BoxLayout:
+        orientation:"horizontal"
+        Button:
+            text:"+"
+		Button:
+		    text:"-"
+        Button:
+            text:"Berechne"
+            on_release: app.berechne(self, root, app)
